@@ -14,6 +14,7 @@ interface AppState {
 }
 
 class _App extends React.Component<AppProps, AppState> {
+    // instead of constructor method we could just use the line `state = { fetching: false }` - in this case there's no need to define AppState, or specify it as a generic on _App
     constructor(props: AppProps) {
         super(props);
 
